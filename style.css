@@ -1,0 +1,231 @@
+/* Reset all default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Roboto', sans-serif; /* Spotify uses Google Fonts (Roboto) */
+    background-image: url('asset.jpg');
+    background-color: #121212; /* Spotify's dark theme */
+    color: #e1e1e1; /* Light text on dark background */
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-image: url('asset.jpg');
+    background-color: #1e1e1e; /* Dark background for the header */
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap between menu items */
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: #b3b3b3; /* Light gray color for the links */
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #7844c7; /* Spotify's signature green on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('asset.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: #7844c7; /* Spotify green */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #57328d; /* Slightly darker green on hover */
+  }
+  
+  /* Services Section */
+  #services {
+    background-color: #181818; /* Dark gray background */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Gap between each service card */
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background-color: #282828; /* Dark background for each service card */
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #b3b3b3;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #b3b3b3;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #181818;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 30px; /* Rounded corners */
+    background-color: #282828;
+    color: #e1e1e1;
+    font-size: 1rem;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #7844c7; /* Green border on focus */
+  }
+  
+  form button {
+    background-color: #7844c7;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1aa34a;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e1e1e;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .service-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-item {
+      width: 90%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    nav a {
+      font-size: 16px;
+    }
+  }
+  
